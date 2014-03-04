@@ -17,9 +17,6 @@
     NSImage *statusHighlightImage;
 }
 
-@property (assign) IBOutlet NSWindow *window;
 - (IBAction)fetch:(id)sender;
 
-@property (weak) IBOutlet NSTextFieldCell *myLabel;
-- (IBAction)displayBuyPrice:(id)sender;
 @end
