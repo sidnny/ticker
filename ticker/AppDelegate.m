@@ -8,6 +8,7 @@
 
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 #define coinbaseBuyURL [NSURL URLWithString:@"https://coinbase.com/api/v1/prices/buy"]
+#define coinbaseSellURL [NSURL URLWithString:@"https://coinbase.com/api/v1/prices/sell"]
 
 #import "AppDelegate.h"
 
@@ -68,7 +69,7 @@
         NSLog(@"%@", [error localizedDescription]);
     }
     else {
-        NSString *title = [NSString stringWithFormat: @"Buy: %@ %@", buyPrice[@"total"][@"currency"], buyPrice[@"total"][@"amount"]];
+        NSString *title = [NSString stringWithFormat: @"Buy: %@ %@", buyPrice[@"subtotal"][@"amount"], buyPrice[@"total"][@"currency"]];
         [statusItem setTitle:title];
         NSLog(@"----");
         NSLog(@"buyPrice subtotal: %@ %@", buyPrice[@"subtotal"][@"currency"], buyPrice[@"subtotal"][@"amount"] );

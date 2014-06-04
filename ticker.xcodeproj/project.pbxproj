@@ -16,8 +16,6 @@
 		7928836918C4881100769703 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7928836818C4881100769703 /* Images.xcassets */; };
 		7928837018C4881100769703 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7928836F18C4881100769703 /* XCTest.framework */; };
 		7928837118C4881100769703 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7928835018C4881000769703 /* Cocoa.framework */; };
-		7928837918C4881100769703 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7928837718C4881100769703 /* InfoPlist.strings */; };
-		7928837B18C4881100769703 /* tickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7928837A18C4881100769703 /* tickerTests.m */; };
 		796646A118C5ED2000DD3A40 /* ticker_icon_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 7966469B18C5ED2000DD3A40 /* ticker_icon_16.png */; };
 		796646A218C5ED2000DD3A40 /* ticker_icon_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 7966469C18C5ED2000DD3A40 /* ticker_icon_32.png */; };
 		796646A318C5ED2000DD3A40 /* ticker_icon_128.png in Resources */ = {isa = PBXBuildFile; fileRef = 7966469D18C5ED2000DD3A40 /* ticker_icon_128.png */; };
@@ -56,9 +54,6 @@
 		7928836818C4881100769703 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		7928836E18C4881100769703 /* tickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7928836F18C4881100769703 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7928837618C4881100769703 /* tickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tickerTests-Info.plist"; sourceTree = "<group>"; };
-		7928837818C4881100769703 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7928837A18C4881100769703 /* tickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tickerTests.m; sourceTree = "<group>"; };
 		7966469B18C5ED2000DD3A40 /* ticker_icon_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticker_icon_16.png; sourceTree = "<group>"; };
 		7966469C18C5ED2000DD3A40 /* ticker_icon_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticker_icon_32.png; sourceTree = "<group>"; };
 		7966469D18C5ED2000DD3A40 /* ticker_icon_128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticker_icon_128.png; sourceTree = "<group>"; };
@@ -104,7 +99,6 @@
 				79D7AD4218C4A5D400284AF2 /* ticker_icon_h.png */,
 				79D7AD4318C4A5D400284AF2 /* ticker_icon.png */,
 				7928835618C4881100769703 /* ticker */,
-				7928837418C4881100769703 /* tickerTests */,
 				7928834F18C4881000769703 /* Frameworks */,
 				7928834E18C4881000769703 /* Products */,
 			);
@@ -159,24 +153,6 @@
 				7928835C18C4881100769703 /* main.m */,
 				7928835E18C4881100769703 /* ticker-Prefix.pch */,
 				7928835F18C4881100769703 /* Credits.rtf */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7928837418C4881100769703 /* tickerTests */ = {
-			isa = PBXGroup;
-			children = (
-				7928837A18C4881100769703 /* tickerTests.m */,
-				7928837518C4881100769703 /* Supporting Files */,
-			);
-			path = tickerTests;
-			sourceTree = "<group>";
-		};
-		7928837518C4881100769703 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7928837618C4881100769703 /* tickerTests-Info.plist */,
-				7928837718C4881100769703 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -277,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7928837918C4881100769703 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7928837B18C4881100769703 /* tickerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,14 +308,6 @@
 				7928836618C4881100769703 /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		7928837718C4881100769703 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7928837818C4881100769703 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
